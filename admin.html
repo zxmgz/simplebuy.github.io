@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleBuy - Admin Dashboard</title>
+  <link rel="icon" href="../images/logo/SimpleBuy-_1_.ico" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- Sidebar / Left Menu -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <h1>SimpleBuy</h1>
+          <h1>Admin Dashboard
+          </h1>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" type="button" data-target="home">Home</button>
+        <button class="nav-btn" type="button" data-target="products">Manage Products</button>
+        <button class="nav-btn" type="button" data-target="members">Members Banner</button>
+        <button class="nav-btn" type="button" data-target="requests">Customer Requests</button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top bar -->
+      <header class="main-header">
+        <h2>Home</h2>
+        <p class="main-subtitle">Overview of profits, losses and customer activity</p>
+      </header>
+
+      <!-- Home dashboard grid -->
+      <section class="admin-section active" data-section="home" aria-label="Dashboard Overview">
+        <div class="cards-grid">
+          <!-- Weekly profit card -->
+          <article class="card">
+            <h3>Weekly Product Profit</h3>
+            <p class="metric-label">This Week</p>
+            <p class="metric-value">DH 0.00</p>
+            <p class="metric-note">(Connect this to your real data later.)</p>
+          </article>
+
+          <!-- Losses and total profit card -->
+          <article class="card">
+            <h3>Losses &amp; Total Profit</h3>
+            <div class="metric-row">
+              <div>
+                <p class="metric-label">Total Profit</p>
+                <p class="metric-value text-success">DH 0.00</p>
+              </div>
+              <div>
+                <p class="metric-label">Total Losses</p>
+                <p class="metric-value text-danger">DH 0.00</p>
+              </div>
+            </div>
+            <p class="metric-note">Summary of overall performance.</p>
+          </article>
+
+          <!-- Monthly column chart card -->
+          <article class="card chart-card">
+            <h3>Monthly Profit &amp; Loss</h3>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-color profit"></span> Profit</span>
+              <span class="legend-item"><span class="legend-color loss"></span> Loss</span>
+            </div>
+            <div class="chart-placeholder" aria-label="Column chart for monthly profit and loss">
+              <!-- Simple column placeholders (CSS only, no JS) -->
+              <div class="chart-columns">
+                <div class="chart-column">
+                  <div class="bar bar-profit" style="height: 60%"></div>
+                  <span class="month-label">Jan</span>
+                </div>
+                <div class="chart-column">
+                  <div class="bar bar-loss" style="height: 30%"></div>
+                  <span class="month-label">Feb</span>
+                </div>
+                <div class="chart-column">
+                  <div class="bar bar-profit" style="height: 70%"></div>
+                  <span class="month-label">Mar</span>
+                </div>
+                <div class="chart-column">
+                  <div class="bar bar-profit" style="height: 50%"></div>
+                  <span class="month-label">Apr</span>
+                </div>
+                <div class="chart-column">
+                  <div class="bar bar-loss" style="height: 40%"></div>
+                  <span class="month-label">May</span>
+                </div>
+                <div class="chart-column">
+                  <div class="bar bar-profit" style="height: 80%"></div>
+                  <span class="month-label">Jun</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Latest customer requests card -->
+          <article class="card">
+            <h3>Latest Customer Requests</h3>
+            <ul class="requests-list">
+              <li class="request-item empty">No customer requests yet.</li>
+              <!-- Example structure you can duplicate later:
+              <li class="request-item">
+                <div class="request-main">
+                  <span class="request-customer">John Doe</span>
+                  <span class="request-date">2025-12-24</span>
+                </div>
+                <p class="request-message">"Please check my order status for #1234"</p>
+              </li>
+              -->
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sections for other menu buttons -->
+      <section class="admin-section" data-section="products" aria-label="Manage Products">
+        <div class="section-placeholder">
+          <h3>Manage Products</h3>
+          <p>Products you add here will also appear on the customer website (for this browser) via local storage.</p>
+
+          <form id="admin-product-form" class="admin-product-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ap-title">Product Name</label>
+                <input type="text" id="ap-title" placeholder="New product name" required />
+              </div>
+              <div class="form-group">
+                <label for="ap-price">Price (DH)</label>
+                <input type="number" step="0.01" id="ap-price" placeholder="0.00" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ap-image">Image URL</label>
+                <input type="text" id="ap-image" placeholder="https://example.com/image.jpg" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ap-description">Description</label>
+              <textarea id="ap-description" rows="2" placeholder="Short description of the product"></textarea>
+            </div>
+            <button type="submit" class="admin-btn primary">Add Product</button>
+          </form>
+
+          <div class="admin-products-list-wrapper">
+            <h4>Extra Products (Local)</h4>
+            <table class="admin-products-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Price (DH)</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-products-tbody">
+                <!-- Filled from admin.js / localStorage -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-section" data-section="members" aria-label="Members Banner">
+        <div class="section-placeholder">
+          <h3>Members Banner</h3>
+          <p>Configure which members are allowed to access this admin interface.</p>
+        </div>
+      </section>
+
+      <section class="admin-section" data-section="requests" aria-label="Customer Requests">
+        <div class="section-placeholder">
+          <h3>Customer Requests</h3>
+          <p>View and handle all incoming customer support requests.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: orange;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h4, h6, p, a {
+  color: #222;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin: 15px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Header Section */
+header {
+  background-color: #fff;
+  padding: 10px 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav img.logo {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover, 
+header nav ul li a.active {
+  color: var(--primary-color);
+}
+
+#menu {
+  display: none;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu li {
+  margin: 10px 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1000;
+  padding:20px;
+  width: 50%;
+  height: 100vh;
+  box-shadow: 2px 0 5px black;
+  border: 1px solid black;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+}
+#menu-toggle.open {
+  transform: translateX(0);
+}
+
+#Close {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+  margin-top: auto;
+}
+
+@media (max-width: 834px) {
+  #bar {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  #menu-toggle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    right: -50%;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 1px solid black;
+
+    
+  }
+
+  #Close {
+    display: block;
+  }
+}
+
+@media (min-width: 834px) {
+  #bar, #Close, #mobile {
+    display: none;
+  }
+
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-item {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 2em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+.contact-item h3 {
+  color: var(--primary-color);
+}
+  
+
+/* Footer Section */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .col {
+  flex: 1;
+  margin: 20px;
+}
+
+footer .col h4 {
+  margin-bottom: 20px;
+}
+
+footer .col p,
+footer .col a {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer .col a:hover {
+  color: var(--primary-color);
+}
+
+footer .follow .icon i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer .follow .icon i:hover {
+  color: var(--primary-color);
+}
+
+footer .copyright {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}

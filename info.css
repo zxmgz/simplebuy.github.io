@@ -1,0 +1,239 @@
+/* Shared styles for secondary info pages (delivery, privacy, terms, etc.) */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+/* Header / nav (kept consistent with other pages) */
+header {
+  background-color: #fff;
+  padding: 10px 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav img.logo {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--primary-color);
+}
+
+/* mobile menu base (same ids/classes as other pages) */
+#menu {
+  display: none;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu li {
+  margin: 10px 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1000;
+  padding: 20px;
+  width: 50%;
+  height: 100vh;
+  box-shadow: 2px 0 5px black;
+  border: 1px solid black;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+}
+
+#menu-toggle.open {
+  transform: translateX(0);
+}
+
+#Close {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+  margin-top: auto;
+}
+
+@media (max-width: 834px) {
+  #bar {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 1px solid black;
+  }
+
+  #Close {
+    display: block;
+  }
+}
+
+@media (min-width: 834px) {
+  #bar,
+  #Close,
+  #mobile {
+    display: none;
+  }
+}
+
+/* page content */
+.info-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-wrapper h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.info-wrapper p,
+.info-wrapper li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.info-wrapper ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Footer Section (same style used across site) */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .col {
+  flex: 1;
+  margin: 20px;
+}
+
+footer .col h4 {
+  margin-bottom: 20px;
+}
+
+footer .col p,
+footer .col a {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+footer .col a:hover {
+  color: var(--primary-color);
+}
+
+footer .follow .icon i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer .follow .icon i:hover {
+  color: var(--primary-color);
+}
+
+footer .copyright {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}

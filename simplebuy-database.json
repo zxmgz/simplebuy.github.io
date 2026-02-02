@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "generatedAt": "2025-12-25",
+  "currency": "DH",
+  "localStorageKeys": {
+    "userLoggedIn": "simplebuyUserLoggedIn",
+    "cartItems": "simplebuyCartItems",
+    "extraProducts": "simplebuyExtraProducts"
+  },
+  "products": [
+    {
+      "id": "p1",
+      "name": "Product 1",
+      "brand": "SimpleBuy",
+      "category": "clothing",
+      "price": 214.99,
+      "image": "../images/les images des produite/images (1).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p2",
+      "name": "Product 2",
+      "brand": "SimpleBuy",
+      "category": "clothing",
+      "price": 249.99,
+      "image": "../images/les images des produite/images (2).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p3",
+      "name": "Product 3",
+      "brand": "SimpleBuy",
+      "category": "accessories",
+      "price": 199.99,
+      "image": "../images/les images des produite/images (3).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p4",
+      "name": "Product 4",
+      "brand": "SimpleBuy",
+      "category": "accessories",
+      "price": 289.99,
+      "image": "../images/les images des produite/images (4).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p5",
+      "name": "Product 5",
+      "brand": "SimpleBuy",
+      "category": "clothing",
+      "price": 309.99,
+      "image": "../images/les images des produite/images.jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p6",
+      "name": "Product 6",
+      "brand": "SimpleBuy",
+      "category": "clothing",
+      "price": 220.0,
+      "image": "../images/les images des produite/téléchargement (1).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p7",
+      "name": "Product 7",
+      "brand": "SimpleBuy",
+      "category": "accessories",
+      "price": 340.99,
+      "image": "../images/les images des produite/téléchargement (2).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p8",
+      "name": "Product 8",
+      "brand": "SimpleBuy",
+      "category": "accessories",
+      "price": 279.99,
+      "image": "../images/les images des produite/téléchargement (3).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    },
+    {
+      "id": "p9",
+      "name": "Product 9",
+      "brand": "SimpleBuy",
+      "category": "clothing",
+      "price": 250.0,
+      "image": "../images/les images des produite/téléchargement (4).jpeg",
+      "ratingStars": 5,
+      "comments": []
+    }
+  ],
+  "dynamicCollections": {
+    "extraProductsFromAdmin": {
+      "description": "Products created via the admin dashboard are stored in localStorage under the 'simplebuyExtraProducts' key.",
+      "schemaExample": {
+        "title": "New Product",
+        "price": "199.99",
+        "image": "https://example.com/image.jpg",
+        "description": "Short description of the product",
+        "video": "https://example.com/video.mp4",
+        "category": "clothing"
+      }
+    }
+  }
+}
