@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleBuy</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="../images/logo/SimpleBuy-_1_.ico" />
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="Header">
+    <nav>
+      <img src="../images/logo/logo%202%20long.png" alt="Logo" class="logo" />
+      <ul id="nav-links" class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="../about-us/about.html">About Us</a></li>
+        <li><a href="../contact-page/contact.html">Contact</a></li>
+        <li><a href="../account-page/account.html" class="fa-solid fa-user account-icon" id="account-icon"></a></li>
+        <li><a class="fa-solid fa-cart-shopping cart-icon" id="cart-icon" data-quantity="0"></a></li>
+      </ul>
+      <button id="menu-toggle" class="menu-toggle">Menu</button>
+    </nav>
+
+    <!-- Cart -->
+    <div id="cart" class="cart">
+      <h4 class="cart-title">Your Cart</h4>
+      <!-- Content -->
+      <div class="cart-content">
+        <!-- The cart items will be added here -->
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">DH 0</div>
+        </div>
+        <!-- Buy button -->
+        <button href="cart.html" type="button" class="btn-buy">Buy Now</button>
+        <!-- Cart close -->
+        <div id="close-cart" class="close-cart">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile">
+      <li><a href="../account-page/account.html" class="fa-solid fa-user account-icon" id="account-mobile"></a></li>
+      <li><a class="fa-solid fa-cart-shopping cart-icon" id="cart-mobile"></a></li>
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Store</h1>
+      <p>Discover our exciting products.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+  <section id="features" class="section-p1">
+    <h2>Why Shop With Us?</h2>
+    <div class="features-container">
+      <div class="feature">
+        <i class="fa fa-shipping-fast"></i>
+        <h3>Fast Shipping</h3>
+        <p>Get your products delivered in no time.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-award"></i>
+        <h3>Quality Products</h3>
+        <p>We offer only the best quality items.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-headset"></i>
+        <h3>Customer Support</h3>
+        <p>24/7 customer support to assist you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section-p1">
+    <h2>Our Products</h2>
+    <h4>We care about product quality to gain our customers' trust.</h4>
+    <div class="products-container">
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/images%20(1).jpeg" alt="Product 1" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 1</h3>
+        <p class="price">DH214.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/images%20(2).jpeg" alt="Product 2" class="product-img" />
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 2</h3>
+        <p class="price">DH249.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/images%20(3).jpeg" alt="Product 3" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 3</h3>
+        <p class="price">DH199.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/images%20(4).jpeg" alt="Product 4" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 4</h3>
+        <p class="price">DH289.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/images.jpeg" alt="Product 5" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 5</h3>
+        <p class="price">DH309.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/t%C3%A9l%C3%A9chargement%20(1).jpeg" alt="Product 6" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 6</h3>
+        <p class="price">DH220</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/t%C3%A9l%C3%A9chargement%20(2).jpeg" alt="Product 7" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 7</h3>
+        <p class="price">DH340.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/t%C3%A9l%C3%A9chargement%20(3).jpeg" alt="Product 8" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 8</h3>
+        <p class="price">DH279.99</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="../images/les%20images%20des%20produite/t%C3%A9l%C3%A9chargement%20(4).jpeg" alt="Product 9" class="product-img"/>
+        <h5 class="brand-title">SimpleBuy</h5>
+        <h3 class="product-title">Product 9</h3>
+        <p class="price">DH250</p>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a class="add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="section-p1">
+    <h2>Join Our Newsletter</h2>
+    <p>Get the latest updates and offers.</p>
+    <a href="#newsletter" class="btn">Subscribe Now</a>
+  </section>
+
+  <!-- Feature Banner Section -->
+  <section id="feature-banner" class="section-p1">
+    <div class="banner-content">
+      <h2>Exclusive Collection</h2>
+      <p>Check out our new arrivals.</p>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="section-p1">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest news and offers.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Product Details Modal -->
+  <div id="product-modal" class="product-modal" aria-hidden="true">
+    <div class="product-modal-dialog">
+      <button id="product-modal-close" class="product-modal-close" type="button" aria-label="Close product details">&times;</button>
+      <div class="product-modal-content">
+        <div class="product-modal-image-wrapper">
+          <img id="pm-image" src="" alt="Product image" class="product-modal-image" />
+        </div>
+        <div class="product-modal-info">
+          <h3 id="pm-title" class="pm-title"></h3>
+          <p id="pm-price" class="pm-price"></p>
+          <p id="pm-description" class="pm-description"></p>
+          <div id="pm-rating" class="pm-rating"></div>
+          <div class="pm-comments">
+            <h4>Customer Reviews</h4>
+            <ul id="pm-comments-list" class="pm-comments-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="auth-modal" aria-hidden="true">
+    <div class="auth-dialog">
+      <button id="login-close" class="auth-close" type="button" aria-label="Close login">&times;</button>
+      <h2>Sign in to SimpleBuy</h2>
+      <p class="auth-subtitle">Please log in to continue to checkout.</p>
+      <div class="auth-buttons">
+        <button type="button" id="login-google" class="auth-btn google">
+          <i class="fa-brands fa-google"></i> Continue with Google
+        </button>
+        <button type="button" id="login-paypal" class="auth-btn paypal">
+          <i class="fa-brands fa-paypal"></i> Continue with PayPal
+        </button>
+        <button type="button" id="login-email" class="auth-btn email">
+          <i class="fa-solid fa-envelope"></i> Continue with Email
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Summary Modal -->
+  <div id="checkout-summary" class="auth-modal" aria-hidden="true">
+    <div class="auth-dialog checkout-dialog">
+      <button id="checkout-summary-close" class="auth-close" type="button" aria-label="Close checkout">&times;</button>
+      <h2 class="checkout-title">Review your order</h2>
+
+      <div class="checkout-layout">
+        <!-- Left: items and discount -->
+        <div class="checkout-main">
+          <div class="checkout-block">
+            <div class="checkout-block-header">Items in your order</div>
+            <div id="checkout-products" class="checkout-products"></div>
+          </div>
+
+          <div class="checkout-block">
+            <div class="checkout-block-header">Gift card / discount code</div>
+            <div class="checkout-row discount-row">
+              <input type="text" id="discount-code" placeholder="Enter code" />
+              <button type="button" class="discount-apply-btn">Apply</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: order summary totals, like Amazon side column -->
+        <aside class="checkout-side">
+          <div class="order-summary-box">
+            <h3>Order summary</h3>
+            <div class="summary-row">
+              <span>Items subtotal:</span>
+              <span id="summary-subtotal">DH 0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping:</span>
+              <span id="shipping-amount">DH 0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Tax:</span>
+              <span id="tax-amount">DH 0.00</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span>Order total:</span>
+              <span id="checkout-total">DH 0.00</span>
+            </div>
+            <button type="button" id="go-to-address" class="auth-btn email place-order-btn">
+              Continue
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="section-p1">
+    <div class="col">
+      <img src="../images/logo/logo%201%20mini.png" alt="Logo" class="logo" />
+      <h4>Contact</h4>
+      <p><strong>Email Address:</strong> bobstarmyjob@gmail.com</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <a href="https://twitter.com/SimpleBuySupport" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://facebook.com/SimpleBuySupport" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com/SimpleBuySupport" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCI37I9NMX6NDeV4ZPqQ9-Lg" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+          </a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="../about-us/about.html">About Us</a>
+      <a href="../info-pages/delivery.html">Delivery Information</a>
+      <a href="../info-pages/privacy.html">Privacy Policy</a>
+      <a href="../info-pages/terms.html">Terms &amp; Conditions</a>
+      <a href="../contact-page/contact.html">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#newsletter">Sign In</a>
+      <a href="../cart-page/cart.html">View Cart</a>
+      <a href="../info-pages/wishlist.html">My Wishlist</a>
+      <a href="../info-pages/track.html">Track My Order</a>
+      <a href="../info-pages/help.html">Help</a>
+    </div>
+
+    <div class="col install">
+      <p>Secured Payment Gateways</p>
+      <img src="../images/pay/pay.png" alt="Payment Methods" />
+    </div>
+    <div class="copyright">
+      <p>©2024 SimpleBuy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="extraProducts.js"></script>
+  <script src="menuToggel.js"></script>
+</body>
+</html>
